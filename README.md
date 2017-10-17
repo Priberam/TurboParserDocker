@@ -1,4 +1,4 @@
-# Dockerfile for TurboParser using TurboTextAnalysis
+# Dockerfile for TurboParser via TurboTextAnalysis
 
 ## Create the docker
 ```
@@ -10,7 +10,7 @@ docker build -t turboparser .
 docker run -rm -p 5000:5000 -v <MODELS_PATH>:/models turboparser
 ```
 
-## Running
+## Executing
 ```
 curl -H "Content-type: text/plain" -X POST "http://127.0.0.1:5000" --data "Battle-tested Japanese industrial managers here always buck up nervous newcomers with the tale of the first of their countrymen to visit Mexico, a boatload of samurai warriors blown ashore 375 years ago."
 ```
@@ -52,6 +52,6 @@ curl -H "Content-type: text/plain" -X POST "http://127.0.0.1:5000" --data "Battl
 ```
 
 ## Models
-This code should work with any model file trained in TurboParser. To load the TurboParser models, use the [configuration file](https://github.com/Priberam/TurboTextAnalysis/blob/master/Data/config.cfg) provided by TurboTextAnalysis.
+This code should work with any model file trained by TurboParser. To load the TurboParser models, use the [configuration file](https://github.com/Priberam/TurboTextAnalysis/blob/master/Data/config.cfg) provided by TurboTextAnalysis.
 
 Trained models are not available in this repository.
